@@ -1,0 +1,14 @@
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: #201658;
+  text-decoration: dotted underline red;
+  text-indent: 100px; /* paragraph margin */
+  line-height: 100px;  /* margin between two line */
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  
+}

@@ -1,0 +1,56 @@
+#include<iostream.h>
+#include<conio.h>
+
+class a{
+
+	public:
+
+	int a;
+
+	void inputA()
+	{
+		cout<<"A :: ";
+		cin>>a;
+	}
+};
+class b:public a
+{
+	public:
+	int b;
+	void inputB()
+	{
+		cout<<"B :: ";
+		cin>>b;
+	}
+};
+class c:public a{
+	public:
+	int c;
+	void inputC()
+	{
+		cout<<"C :: ";
+		cin>>c;
+	}
+};
+class d:public b{
+
+	public:
+
+	void display()
+	{
+		cout<<"A == "<<a<<endl;
+		cout<<"B == "<<b<<endl;
+	     //	cout<<"C == "<<c<<endl;
+	}
+};
+
+void main()
+{
+	clrscr();
+	d obj;
+	obj.inputA();
+	obj.inputB();
+	obj.inputC();
+	obj.display();
+	getch();
+}

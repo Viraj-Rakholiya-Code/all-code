@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+
+}
+
+.container p{
+    font-size: 70px;
+}
+
+@media screen and (max-width:768px){
+    .container p{
+        font-size: 32px;
+    }
+}

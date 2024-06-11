@@ -1,0 +1,21 @@
+#include<iosteram.h>
+#include<conio.h>
+
+#define true 1
+#define MAX_ACCOUNT 100
+
+class Bank
+{
+  char AccountHolder[MAX_ACCOUNT][50];
+  int AccountCount;
+  int AccountNumber[MAX_ACCOUNT];
+  int AccountBalance[MAX_ACCOUNT];
+
+  public:
+  void createAccount()
+  {
+	cout<<"***************************************************";
+	cout<<"Enter Your Name :: ";
+	cin>>AccountHolder;
+  }
+}

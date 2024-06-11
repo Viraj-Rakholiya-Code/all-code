@@ -1,0 +1,42 @@
+@media screen and (max-width: 750px) {
+  /* tables */
+  .nav-btn button {
+    display: none;
+  }
+  .navbar a {
+    font-size: 0.875rem;
+  }
+
+  .info h1 {
+    font-size: 2.5rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  /* mobile */
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    font-size: 1.3rem;
+  }
+  .page2{
+    height: 100%;
+    gap: 40px;
+
+  }
+
+  .text{
+    margin-top: 20px;
+  }
+  .box-container{
+    margin-bottom: 20px;
+  }
+
+}

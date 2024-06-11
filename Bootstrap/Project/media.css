@@ -1,0 +1,35 @@
+@media screen and (max-width:768px){
+.page1{
+    flex-direction: column-reverse;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media screen and (max-width:1024px){
+    .main-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order{
+        height: auto;
+        padding: 50px;
+    }
+    
+    
+   
+}
+
+
+@media screen and (max-width:425px){
+
+    .project-item .card{
+        width: 100px;
+    }
+}

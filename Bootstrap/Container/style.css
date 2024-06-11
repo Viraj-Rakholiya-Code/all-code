@@ -1,0 +1,13 @@
+.container-fluid {
+  height: 100vh;
+  background: #eef5ff;
+}
+
+.col {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.col img{
+  
+}

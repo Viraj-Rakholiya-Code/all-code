@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.ball {
+  height: 200px;
+  width: 200px;
+  background: #000;
+  border-radius: 50%;
+}
+

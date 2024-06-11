@@ -1,0 +1,61 @@
+#include<iostream.h>
+#include<conio.h>
+
+class a {
+public:
+    int a;
+    void inputA() {
+        cout << "Enter A :: ";
+        cin >> a;
+    }
+};
+
+class b : public a {
+public:
+    int b;
+    void inputB() {
+        cout << "Enter B :: ";
+        cin >> b;
+    }
+};
+
+class c : public a {
+public:
+    int c;
+    void inputC() {
+        cout << "Enter A :: ";
+        cin >> a;
+        cout << "Enter C :: ";
+        cin >> c;
+    }
+};
+
+class d : public b, public c {
+public:
+    int d;
+    void inputD() {
+        cout << "D :: ";
+        cin >> d;
+    }
+    void display() {
+        cout << "A from class b == " << b::a << endl;
+        cout << "A from class c == " << c::a << endl;
+        cout << "B == " << b << endl;
+        cout << "C == " << c << endl;
+        cout << "D == " << d << endl;
+    }
+};
+
+void main() {
+    clrscr();
+
+    d obj;
+
+    obj.b::inputA();  // Specify inputA from class b
+    obj.inputB();
+    obj.inputC();
+    obj.inputD();
+    obj.display();
+
+    getch();
+}

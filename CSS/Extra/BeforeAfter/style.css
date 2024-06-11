@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container button {
+  padding: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  border: none;
+  background: #7daab1;
+  font-weight: bold;
+  position: relative;
+}
+
+.container button::after {
+  content: "Hover";
+  transform: translateY(-100%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #31363F;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: 500ms transform;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.container button:hover::after{
+    transform: translateY(0);
+}
+
+
+.container button::before{
+    content: '';
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #e7b6f5;
+    z-index: 1;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 500ms transform;
+}
+
+.container button:hover::before{
+transform: translateX(0);
+}
+

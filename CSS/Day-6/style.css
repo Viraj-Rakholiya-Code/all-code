@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+li,
+a {
+    float: left;
+    background: #98ABEE;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    margin-top: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    float: none;
+    width: 150px;
+}
+
+
+.patamenu {
+    margin-left: 2px;
+    width: 160px;
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    display: none;
+}
+
+.blog:hover .submenu {
+    display: block;
+}
+
+.submenu:hover .patamenu {
+
+    display: block;
+
+}
+
+.sub-color{
+    background: #836FFF;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+.pata-color{
+    background: #40A2D8;
+    margin-top: 1px;
+    border-radius: 5px;
+
+
+}

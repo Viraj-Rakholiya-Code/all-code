@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    border: 10px solid black;
+    box-sizing: border-box;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    background: #abcd;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes color {
+    from {
+        top: 0px;
+    }
+
+    to {
+        left: 500px;
+    }
+}
