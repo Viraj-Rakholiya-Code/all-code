@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <img
+          class="navbar-brand"
+          src="https://coderthemes.com/dojek/layouts/images/logo-dark.png"
+          alt=""
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#About"
+                onclick="scrollToSection('About')"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#Project"
+                onclick="scrollToSection('Project')"
+                >Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Team" onclick="scrollToSection('Team')"
+                >Team</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="page1 Home container-fluid d-flex justify-content-around align-items-center">
+        <div class="text d-flex justify-content-center flex-column">
+          <h1 class="h1">
+            We are Creative <br />
+            Web <span>Design Agency</span>
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit
+            quam, corporis nemo reiciendis porro perspiciatis doloribus illum
+            nesciunt fugiat?
+          </p>
+          <button type="button" class="btn btn-primary btn-lg rounded-1">
+            Contect Us
+          </button>
+        </div>
+        <div class="img">
+          <figure class="figure">
+            <img
+              src="https://coderthemes.com/dojek/layouts/images/heros/hero-2-img.png"
+              class="figure-img img-fluid rounded"
+              alt="..."
+              height="450"
+              width="550"
+            />
+          </figure>
+        </div>
+      </div>
+      <div
+        class="About page2 d-flex flex-column gap-5 align-items-center justify-content-center"
+        id="About"
+      >
+        <div class="card-item">
+          <p class="text-center">WHAT WE DO</p>
+          <h3 class="text-center">
+            The thing that motivates me is a common <br />form of motivation.
+          </h3>
+        </div>
+        <div
+          class="d-flex align-item-center justify-content-center flex-wrap gap-3 main-card"
+        >
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <i class="card-img bi-gear fs-1 text-center"></i>
+              <h5 class="card-title">Strategy & Research</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                error consequatur aspernatur earum unde velit!
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <i class="card-img bi bi-kanban fs-1 text-center"></i>
+              <h5 class="card-title">Management & Marketing</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                fuga fugiat rem iusto tempora atque?
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <i class="bi bi-stack card-img fs-1 text-center"></i>
+              <h5 class="card-title">Design & Development</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Numquam possimus quod iusto deleniti odit eos.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Project">
+        <div class="project-text text-center">
+          <p class="lead fw-medium">OUR PROJECTS</p>
+          <h2 class="h2">
+            A great design brings thousands of <br />great results.
+          </h2>
+        </div>
+        <div
+          class="cards d-flex gap-5 flex-column mt-5 flex-wrap align-items-center justify-content-center"
+        >
+          <div
+            class="project-item d-flex align-items-center justify-content-center gap-5 flex-wrap"
+          >
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/6457544/pexels-photo-6457544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-item d-flex align-items-center justify-content-center gap-5 flex-wrap"
+          >
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/925786/pexels-photo-925786.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+            <div class="card" style="width: 20rem">
+              <img
+                src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Language of Designs</h5>
+
+                <p class="card-text">Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order text-center">
+        <div class="order-text">
+          <h2 class="h2">825</h2>
+          <p class="lead">GLOBAL BRANDS</p>
+        </div>
+        <div class="order-text">
+          <h2 class="h2">1500+</h2>
+          <p class="lead">HAPPY CLIENTS</p>
+        </div>
+        <div class="order-text">
+          <h2 class="h2">150+</h2>
+          <p class="lead">CREATIVE IDEA</p>
+        </div>
+        <div class="order-text">
+          <h2 class="h2">2500+</h2>
+          <p class="lead">USER CLIENTS</p>
+        </div>
+      </div>
+      <div class="Team" id="Team">
+        <div class="Team-text text-center mt-5">
+          <p class="lead">Team</p>
+          <h2>Amazing Team</h2>
+          <p class="lead">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut <br />
+            odit aut consequuntur magni dolores.
+          </p>
+        </div>
+        <div
+
+          class="Team-both mt-5 d-flex flex-wrap align-items-center justify-content-center gap-3"
+        >
+          <div class="Team-info d-flex gap-3 flex-wrap align-items-center justify-content-center">
+            <div class="card" style="width: 16rem">
+              <img
+                src="https://coderthemes.com/dojek/layouts/images/agency/team/1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Name Surname</h4>
+                <p class="card-text">Web Designer, USA</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="https://coderthemes.com/dojek/layouts/images/agency/team/2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Name Surname</h4>
+                <p class="card-text">Web Designer, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="Team-info d-flex gap-3 flex-wrap align-items-center justify-content-center">
+            <div class="card" style="width: 16rem">
+              <img
+                src="https://coderthemes.com/dojek/layouts/images/agency/team/3.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Name Surname</h4>
+                <p class="card-text">Web Designer, USA</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="https://coderthemes.com/dojek/layouts/images/agency/team/4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h4 class="card-title">Name Surname</h4>
+                <p class="card-text">Web Designer, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<div class="container-fluid ">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#About"
+          onclick="scrollToSection('About')"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#Project"
+          onclick="scrollToSection('Project')"
+          >Project</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Team" onclick="scrollToSection('Team')"
+          >Team</a
+        >
+      </li>
+    </ul>
+  </footer>
+</div>
+      
+    </main>
+
+    <!-- Bootstrap Bundle with Popper.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #CDFADB;
+}
+
+h1{
+    color: darkorchid;
+}
+
+.one{
+    color: red;
+}
+
+.two{
+    color: blueviolet;
+}
+
+.three{
+    color: chocolate;
+}

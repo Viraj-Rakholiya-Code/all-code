@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Poppins';
+}
+
+nav{
+    height: 50px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo{
+    font-size: 25px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px;
+}
+.menu{
+    display: none;
+    font-size: 15px;
+
+
+}
+
+@media screen and (max-width:550px) {
+    .navbar a{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}

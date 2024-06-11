@@ -1,0 +1,13 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.col{
+    border: 1px solid;
+    padding: 10px;
+    height: 100px;
+}
+
+form{
+    padding: 50px;
+}

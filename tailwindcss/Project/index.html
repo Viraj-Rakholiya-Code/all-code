@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import your custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mini: "#ADB7BE",
+              main: "#171718",
+              top: "#121212",
+            },
+            animation: {
+              "loop-scroll": "loop-scroll 50s linear infinite",
+              "loop-scroll2": "loop-scroll2 50s linear infinite",
+            },
+            keyframes: {
+              "loop-scroll": {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(-100%)" },
+              },
+              "loop-scroll2": {
+                from: { transform: "translateX(-100%)" },
+                to: { transform: "translateX(0%)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-top overflow-x-hidden">
+    <nav class="flex items-center justify-between px-6 py-1 bg-top">
+      <div class="flex gap-8 ml-4 items-center">
+        <img
+          src="https://cdn.icon-icons.com/icons2/2429/PNG/512/ui_logo_icon_147171.png"
+          width="60"
+          alt=""
+        />
+        <div class="max-sm:hidden flex gap-8 items-center">
+          <a
+            <a
+            href="#"
+            class="text-mini hover:text-blue-500 transition-colors duration-200"
+            >Browse</a
+          >
+          <a
+            href="#"
+            class="text-mini hover:text-blue-500 transition-colors duration-200"
+            >All-Access</a
+          >
+          <a
+            href="#"
+            class="text-mini hover:text-blue-500 transition-colors duration-200"
+            >Become An author</a
+          >
+        </div>
+        <div class="text-2xl text-mini max-md:hidden">
+          <i class="ri-search-line"></i>
+        </div>
+      </div>
+      <div class="flex gap-7 items-center max-md:hidden">
+        <p class="text-mini hover:text-blue-500 transition-colors duration-200">
+          Sign up
+        </p>
+        <p class="text-mini hover:text-blue-500 transition-colors duration-200">
+          Log in
+        </p>
+        <div class="text-2xl text-min">
+          <i class="ri-shopping-cart-line"></i>
+        </div>
+      </div>
+      <div class="hidden text-2xl max-md:flex">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+    <main class="px-10 px-10 bg-top">
+      <div class="grid grid-rows-1 grid-cols-5 gap-3">
+        <div
+          class="flex flex-col col-span-2 p-5 justify-center bg-main rounded-md max-sm:col-span-5 max-sm:mt-6"
+        >
+          <h1 class="text-4xl max-md:text-3xl">All-Access Pass</h1>
+          <p class="w-[70%] text-base text-mini max-md:w-[80%]">
+            Boost your productivity with instant access to all 8,922 existing
+            products and daily new releases.
+          </p>
+        </div>
+        <div class="col-span-3 bg-main rounded-md max-sm:col-span-5">
+          <img
+            class="rounded-md"
+            src="https://ui8.net/img/aap/hero@2x.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- card -->
+      <div class="flex mt-5 gap-5 max-md:flex-wrap">
+        <div
+          class="w-[33.33%] p-4 shadow-lg rounded-2xl bg-main max-md:w-[100%]"
+        >
+          <div class="flex items-center justify-between text-white">
+            <p class="mb-4 text-4xl font-medium">Pro</p>
+            <p class="flex flex-col text-3xl font-bold">
+              $99
+              <span class="text-sm font-thin text-right"> month </span>
+            </p>
+          </div>
+          <p class="mt-4 text-white text-md">Plan include :</p>
+          <ul class="w-full mt-6 mb-6 text-sm text-white">
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              All illimited components
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Own custom Tailwind styles
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Unlimited Templates
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Free premium dashboard
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Best ranking
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Prenium svg
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              My wife
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="w-full px-3 py-3 text-sm text-black bg-sky-500 rounded-lg shadow hover:bg-gray-100"
+          >
+            Choose plan
+          </button>
+        </div>
+        <div
+          class="w-[33.33%] p-4 shadow-lg rounded-2xl bg-main max-md:w-[100%]"
+        >
+          <div class="flex items-center justify-between text-white">
+            <p class="mb-4 text-4xl font-medium">Pro</p>
+            <p class="flex flex-col text-3xl font-bold">
+              $99
+              <span class="text-sm font-thin text-right"> month </span>
+            </p>
+          </div>
+          <p class="mt-4 text-white text-md">Plan include :</p>
+          <ul class="w-full mt-6 mb-6 text-sm text-white">
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              All illimited components
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Own custom Tailwind styles
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Unlimited Templates
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Free premium dashboard
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Best ranking
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Prenium svg
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              My wife
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="w-full px-3 py-3 text-sm text-black bg-sky-500 rounded-lg shadow hover:bg-gray-100"
+          >
+            Choose plan
+          </button>
+        </div>
+        <div
+          class="w-[33.33%] p-4 shadow-lg rounded-2xl bg-main max-md:w-[100%]"
+        >
+          <div class="flex items-center justify-between text-white">
+            <p class="mb-4 text-4xl font-medium">Pro</p>
+            <p class="flex flex-col text-3xl font-bold">
+              $99
+              <span class="text-sm font-thin text-right"> month </span>
+            </p>
+          </div>
+          <p class="mt-4 text-white text-md">Plan include :</p>
+          <ul class="w-full mt-6 mb-6 text-sm text-white">
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              All illimited components
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Own custom Tailwind styles
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Unlimited Templates
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Free premium dashboard
+            </li>
+            <li class="mb-3 flex items-center">
+              <svg
+                class="w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                stroke="currentColor"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Best ranking
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              Prenium svg
+            </li>
+            <li class="mb-3 flex items-center opacity-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                class="w-6 h-6 mr-2"
+                fill="white"
+                viewBox="0 0 1792 1792"
+              >
+                <path
+                  d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+                ></path>
+              </svg>
+              My wife
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="w-full px-3 py-3 text-sm text-black bg-sky-500 rounded-lg shadow hover:bg-gray-100"
+          >
+            Choose plan
+          </button>
+        </div>
+      </div>
+      <!-- silder -->
+
+      <div
+        class="h-[50vh] bg-main mt-4 flex justify-center items-center flex-col gap-10 max-md:h-auto rounded-md"
+      >
+        <div class="text-center">
+          <h1 class="text-3xl max-sm:text-2xl">
+            Chosen by leading creatives globally
+          </h1>
+          <p class="text-mini mt-3 max-sm:text-base">
+            UI8 empowers over 700,000 designers from all over the world.
+          </p>
+        </div>
+        <div
+          class="flex flex-row gap-10 max-lg:flex-wrap items-center justify-center"
+        >
+          <img
+            src="https://ui8.net/img/companies/microsoft.svg"
+            width="150"
+            alt=""
+          />
+          <img
+            src="https://ui8.net/img/companies/netflix.svg"
+            width="150"
+            alt=""
+          />
+          <img
+            src="https://ui8.net/img/companies/google.svg"
+            width="150"
+            alt=""
+          />
+          <img
+            src="https://ui8.net/img/companies/airbnb.svg"
+            width="150"
+            alt=""
+          />
+          <img
+            src="https://ui8.net/img/companies/stripe.svg"
+            width="150"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- info1 -->
+
+      <div class="grid grid-cols-5 mt-5 gap-5 grid-rows-1">
+        <div class="col-span-2 max-md:col-span-5">
+          <img
+            src="https://ui8.net/img/aap/feature-1.jpg"
+            alt=""
+            class="rounded-md w-full max-md:h-[300px] object-center object-cover"
+          />
+        </div>
+        <div
+          class="col-span-3 bg-main rounded-md flex flex-col justify-center items-center max-md:col-span-5 max-md:p-10 max-sm:p-1"
+        >
+          <div class="w-[80%] flex flex-col gap-5">
+            <p class="text-sm text-blue-500 bg-black max-w-fit p-1 rounded-md">
+              Maximum value
+            </p>
+            <h1 class="text-3xl">Unlock $236,534 worth of assets</h1>
+            <p class="text-base text-mini">
+              Think of this as a shortcut to design greatness - no more endless
+              hours spent searching for the perfect graphic, no more sacrificing
+              your budget for quality. It's time to level up and take your
+              design game to new heights.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- info2 -->
+      <div
+        class="grid grid-cols-5 mt-5 gap-5 grid-rows-1 max-md:flex max-md:flex-col-reverse"
+      >
+        <div
+          class="col-span-3 bg-main rounded-md flex flex-col justify-center items-center max-md:col-span-5 max-md:p-10 max-sm:p-1"
+        >
+          <div class="w-[80%] flex flex-col gap-5">
+            <p class="text-sm text-blue-500 bg-black max-w-fit p-1 rounded-md">
+              What's included
+            </p>
+            <h1 class="text-3xl">8,926 products and counting</h1>
+            <p class="text-base text-mini">
+              Your search for the ultimate resource library ends here. With our
+              vast collection of premium resources, you'll have everything you
+              need to super-charge your design skills and stay ahead of the
+              game.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-2 max-md:col-span-5">
+          <img
+            src="https://ui8.net/img/aap/feature-2.jpg"
+            alt=""
+            class="rounded-md w-full max-md:h-[300px] object-center object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- info3 -->
+
+      <div class="grid grid-cols-5 mt-5 gap-5 grid-rows-1">
+        <div class="col-span-2 max-md:col-span-5">
+          <img
+            src="https://ui8.net/img/aap/feature-3.jpg"
+            alt=""
+            class="rounded-md w-full max-md:h-[300px] object-center object-cover"
+          />
+        </div>
+        <div
+          class="col-span-3 bg-main rounded-md flex flex-col justify-center items-center max-md:col-span-5 max-md:p-10 max-sm:p-1"
+        >
+          <div class="w-[80%] flex flex-col gap-5">
+            <p class="text-sm text-blue-500 bg-black max-w-fit p-1 rounded-md">
+              Daily updates
+            </p>
+            <h1 class="text-3xl">New products curated daily</h1>
+            <p class="text-base text-mini">
+              Get your daily dose of design brilliance. Each day brings cool,
+              new assets to keep your projects trendy and top-tier. It's like
+              having a never-ending stream of fresh ideas at your fingertips!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- gallary -->
+
+      <div class="">
+        <div class="flex overflow-hidden space-x-5 mt-5">
+          <div class="flex space-x-5 animate-loop-scroll">
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-1.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 1"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-2.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 2"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-3.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 3"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-4.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 4"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-5.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 5"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-6.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 6"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-7.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 7"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-8.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 8"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-9.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 9"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-10.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 10"
+              width="300"
+            />
+          </div>
+          <div class="flex space-x-5 animate-loop-scroll" aria-hidden="true">
+            <img loading="lazy" src="https://ui8.net/img/products/product-1.jpg"
+            class="max-w-none width="300"" alt="Image 1" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-2.jpg"
+            class="max-w-none width="300"" alt="Image 2" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-3.jpg"
+            class="max-w-none width="300"" alt="Image 3" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-4.jpg"
+            class="max-w-none width="300"" alt="Image 4" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-5.jpg"
+            class="max-w-none width="300"" alt="Image 5" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-6.jpg"
+            class="max-w-none width="300"" alt="Image 6" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-7.jpg"
+            class="max-w-none width="300"" alt="Image 7" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-8.jpg"
+            class="max-w-none width="300"" alt="Image 8" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-9.jpg"
+            class="max-w-none width="300"" alt="Image 9" width="300" /> <img
+            loading="lazy" src="https://ui8.net/img/products/product-10.jpg"
+            class="max-w-none width="300" " alt="Image 10" width="300"/>
+          </div>
+        </div>
+        <div class="flex overflow-hidden space-x-5 mt-5">
+          <div class="flex space-x-5 animate-loop-scroll2">
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-11.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 1"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-12.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 2"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-13.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 3"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-14.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 4"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-15.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 5"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-16.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 6"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-17.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 7"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-18.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 8"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-19.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 9"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-20.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 10"
+              width="300"
+            />
+          </div>
+          <div class="flex space-x-5 animate-loop-scroll2" aria-hidden="true">
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-11.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 1"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-12.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 2"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-13.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 3"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-14.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 4"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-15.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 5"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-16.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 6"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-17.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 7"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-18.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 8"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-19.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 9"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-20.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 10"
+              width="300"
+            />
+          </div>
+        </div>
+        <div class="flex overflow-hidden space-x-5 mt-5">
+          <div class="flex space-x-5 animate-loop-scroll">
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-21.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 1"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-22.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 2"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-23.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 3"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-24.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 4"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-25.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 5"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-26.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 6"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-27.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 7"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-28.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 8"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-29.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 9"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-30.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 10"
+              width="300"
+            />
+          </div>
+          <div class="flex space-x-5 animate-loop-scroll" aria-hidden="true">
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-21.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 1"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-22.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 2"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-23.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 3"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-24.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 4"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-25.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 5"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-26.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 6"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-27.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 7"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-28.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 8"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-29.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 9"
+              width="300"
+            />
+            <img
+              loading="lazy"
+              src="https://ui8.net/img/products/product-30.jpg"
+              class="max-w-none rounded-md"
+              alt="Image 10"
+              width="300"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- last section -->
+      <div class="grid grid-cols-4 flex justify-center gap-2 ">
+        <main
+          class="max-w-3xl border shadow-md px-12 py-8 mt-8 rounded-lg col-span-2 max-md:col-span-4"
+        >
+          <h1 class="pt-2 pb-8 text-center text-4xl font-bold">
+            Frequently Asked Questions
+          </h1>
+
+          <section class="grid grid-cols-1 gap-y-3 divide-y">
+            <details open class="group py-1 text-lg">
+              <summary
+                class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-mini marker:[font-size:0px]"
+              >
+                Who built this Javascriptless accordion demo?
+                <svg
+                  class="h-6 w-6 rotate-0 transform text-gray-400 group-open:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="text-mini">
+                This demo was built by
+                <a
+                  class="text-blue-500 hover:text-blue-700"
+                  href="https://marktownsend.rocks"
+                  >Mark Townsend</a
+                >, a professional web developer with a passion for Laravel and
+                Tailwind CSS.
+              </p>
+            </details>
+
+            <details class="group py-1 text-lg">
+              <summary
+                class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-mini marker:[font-size:0px]"
+              >
+                Why not just use React?
+                <svg
+                  class="h-6 w-6 rotate-0 transform text-mini group-open:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="text-white">
+                It's true, you could just sprinkle in some Javascript. Many
+                modern Javascript libraries are incredibly easy to use. But
+                sometimes you don't need Javascript when you can solve your
+                problem with simple HTML and CSS.
+              </p>
+            </details>
+            <details class="group py-1 text-lg">
+              <summary
+                class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-mini marker:[font-size:0px]"
+              >
+                Why not just use Javascript?
+                <svg
+                  class="h-6 w-6 rotate-0 transform text-mini group-open:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="text-white">
+                It's true, you could just sprinkle in some Javascript. Many
+                modern Javascript libraries are incredibly easy to use. But
+                sometimes you don't need Javascript when you can solve your
+                problem with simple HTML and CSS.
+              </p>
+            </details>
+
+            <details class="group py-1 text-lg">
+              <summary
+                class="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-mini marker:[font-size:0px]"
+              >
+                Can I just copy and paste this code for my own project?
+                <svg
+                  class="h-6 w-6 rotate-0 transform text-mini group-open:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="text-white">
+                Absolutely! I think sharing ideas (and sometimes code) are
+                invaluable to the learning process. And let's face it: sometimes
+                you just want to get a simple FAQ or accordion section up fast
+                and move on to more pressing parts of whatever you're building.
+              </p>
+            </details>
+          </section>
+        </main>
+        <main class="col-span-2 mt-8 flex flex-col gap-2 max-md:col-span-4">
+          <div class="flex w-full gap-2 max-sm:flex-wrap max-sm:justify-center">
+            <div
+              class="w-[50%] h-[300px] max-sm:w-[100%] bg-main rounded-md items-center justify-center flex flex-col gap-2"
+            >
+              <svg
+                viewBox="0 0 56 56"
+                width="60"
+                height="60"
+                class="rounded-full"
+              >
+                <defs>
+                  <rect id="lib-3-1" width="56" height="56" rx="28"></rect>
+                </defs>
+                <g fill-rule="evenodd">
+                  <mask id="lib-3-2" fill="#fff">
+                    <use xlink:href="#icon-3-1"></use>
+                  </mask>
+                  <g fill-rule="nonzero">
+                    <use xlink:href="#icon-3-1" fill="#2d68ff"></use>
+                    <path
+                      fill="#1b48ba"
+                      mask="url(#icon-3-2)"
+                      d="M0 0h28v56H0z"
+                    ></path>
+                    <path
+                      fill="#dce3f4"
+                      d="M15 44a3 3 0 0 1-3-3V15a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H15z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      fill="#1b48ba"
+                      d="M21 29a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H21z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      fill="#6b84c4"
+                      d="M20 37a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4H20z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      mask="url(#icon-3-2)"
+                      d="M28 6l4 6h-8zm22 22l-6 4v-8zM28 50l-4-6h8zM6 28l6-4v8z"
+                      fill="#171c24"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <h1 class="text-mini text-3xl font-semibold">3,654</h1>
+              <p class="text-lg">Ui Kits</p>
+            </div>
+            <div
+              class="w-[50%] h-[300px] max-sm:w-[100%] bg-main rounded-md items-center justify-center flex flex-col gap-2"
+            >
+              <svg
+                viewBox="0 0 56 56"
+                width="60"
+                height="60"
+                class="rounded-full"
+              >
+                <defs>
+                  <circle id="lib-5-1" cx="28" cy="28" r="28"></circle>
+                  <path
+                    id="lib-5-2"
+                    d="M18 28c5.523 0 10-4.477 10-10S23.523 8 18 8 8 12.477 8 18s4.477 10 10 10zm0 8c9.941 0 18-8.059 18-18S27.941 0 18 0 0 8.059 0 18s8.059 18 18 18z"
+                  ></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <circle
+                    cx="28"
+                    cy="28"
+                    r="28"
+                    fill="#2d68ff"
+                    fill-rule="nonzero"
+                  ></circle>
+                  <mask id="C" fill="#fff">
+                    <use xlink:href="#icon-5-1"></use>
+                  </mask>
+                  <g fill-rule="nonzero">
+                    <path
+                      fill="#1b48ba"
+                      mask="url(#C)"
+                      d="M0 0h28v56H0z"
+                    ></path>
+                    <path fill="#171c24" d="M38 28h8v18h-8z"></path>
+                  </g>
+                  <path
+                    fill="#dce3f4"
+                    d="M28 38c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm0 8c9.941 0 18-8.059 18-18s-8.059-18-18-18-18 8.059-18 18 8.059 18 18 18z"
+                  ></path>
+                  <g transform="translate(10 10)">
+                    <mask id="D" fill="#fff">
+                      <use xlink:href="#icon-5-2"></use>
+                    </mask>
+                    <g fill-rule="nonzero" mask="url(#D)">
+                      <g transform="translate(18)">
+                        <path fill="#6b84c5" d="M0 0h18v36H0z"></path>
+                        <path fill="#171c24" d="M0 18h18v18H0z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <h1 class="text-mini text-3xl font-semibold">2,352</h1>
+              <p class="text-lg">illustrations</p>
+            </div>
+          </div>
+          <div class="flex w-full gap-2 max-sm:flex-wrap max-sm:justify-center">
+            <div
+              class="w-[50%] h-[300px] max-sm:w-[100%] bg-main rounded-md items-center justify-center flex flex-col gap-2"
+            >
+              <svg
+                viewBox="0 0 56 56"
+                width="60"
+                height="60"
+                class="rounded-full"
+              >
+                <defs>
+                  <rect id="lib-3-1" width="56" height="56" rx="28"></rect>
+                </defs>
+                <g fill-rule="evenodd">
+                  <mask id="lib-3-2" fill="#fff">
+                    <use xlink:href="#icon-3-1"></use>
+                  </mask>
+                  <g fill-rule="nonzero">
+                    <use xlink:href="#icon-3-1" fill="#2d68ff"></use>
+                    <path
+                      fill="#1b48ba"
+                      mask="url(#icon-3-2)"
+                      d="M0 0h28v56H0z"
+                    ></path>
+                    <path
+                      fill="#dce3f4"
+                      d="M15 44a3 3 0 0 1-3-3V15a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v26a3 3 0 0 1-3 3H15z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      fill="#1b48ba"
+                      d="M21 29a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H21z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      fill="#6b84c4"
+                      d="M20 37a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4H20z"
+                      mask="url(#icon-3-2)"
+                    ></path>
+                    <path
+                      mask="url(#icon-3-2)"
+                      d="M28 6l4 6h-8zm22 22l-6 4v-8zM28 50l-4-6h8zM6 28l6-4v8z"
+                      fill="#171c24"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <h1 class="text-mini text-3xl font-semibold">3,654</h1>
+              <p class="text-lg">Ui Kits</p>
+            </div>
+            <div
+              class="w-[50%] h-[300px] max-sm:w-[100%] bg-main rounded-md items-center justify-center flex flex-col gap-2"
+            >
+              <svg
+                viewBox="0 0 56 56"
+                width="60"
+                height="60"
+                class="rounded-full"
+              >
+                <defs>
+                  <circle id="lib-5-1" cx="28" cy="28" r="28"></circle>
+                  <path
+                    id="lib-5-2"
+                    d="M18 28c5.523 0 10-4.477 10-10S23.523 8 18 8 8 12.477 8 18s4.477 10 10 10zm0 8c9.941 0 18-8.059 18-18S27.941 0 18 0 0 8.059 0 18s8.059 18 18 18z"
+                  ></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <circle
+                    cx="28"
+                    cy="28"
+                    r="28"
+                    fill="#2d68ff"
+                    fill-rule="nonzero"
+                  ></circle>
+                  <mask id="C" fill="#fff">
+                    <use xlink:href="#icon-5-1"></use>
+                  </mask>
+                  <g fill-rule="nonzero">
+                    <path
+                      fill="#1b48ba"
+                      mask="url(#C)"
+                      d="M0 0h28v56H0z"
+                    ></path>
+                    <path fill="#171c24" d="M38 28h8v18h-8z"></path>
+                  </g>
+                  <path
+                    fill="#dce3f4"
+                    d="M28 38c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm0 8c9.941 0 18-8.059 18-18s-8.059-18-18-18-18 8.059-18 18 8.059 18 18 18z"
+                  ></path>
+                  <g transform="translate(10 10)">
+                    <mask id="D" fill="#fff">
+                      <use xlink:href="#icon-5-2"></use>
+                    </mask>
+                    <g fill-rule="nonzero" mask="url(#D)">
+                      <g transform="translate(18)">
+                        <path fill="#6b84c5" d="M0 0h18v36H0z"></path>
+                        <path fill="#171c24" d="M0 18h18v18H0z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <h1 class="text-mini text-3xl font-semibold">2,352</h1>
+              <p class="text-lg">illustrations</p>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- footer -->
+
+      
+
+<footer class="bg-main mt-5">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="" class="flex items-center">
+                  <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/ui_logo_icon_147171.png" class="h-8 me-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/* .box{
+    height: 200px;
+    width: 200px;
+    background: #000;
+    transition: 1s background;
+}
+
+.box:hover{
+    background: red;
+} */
+
+::selection{
+    color: green;
+    background: red;
+}
+
+p::first-line{
+    color: red;
+}
+
+input::placeholder{
+    color: red;
+}

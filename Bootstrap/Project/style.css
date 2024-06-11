@@ -1,0 +1,100 @@
+.navbar-custom {
+  background-color: #fff;
+}
+.navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #000;
+}
+.navbar-custom .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.page1{
+    height: calc(100vh - 56px);
+    background-image: url('https://coderthemes.com/dojek/layouts/images/heros/hero-2-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.text{
+    height: calc(100vh - 56px);
+    width: 40%;
+
+}
+
+.text button{
+    width: 150px;
+}
+
+.text span{
+    color: #1CE1AC;
+}
+
+
+.page2{
+    height: auto;
+    /* margin-top: 100px; */
+}
+
+.card-body{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+#Project{
+    margin-top: 110px;
+}
+
+.project-text p{
+    color: #6C757D;
+}
+
+
+.card img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+
+#Testimonial{
+    background: #FFF0C4;
+}
+
+.carousel-inner
+{
+    background: #FFF0C4;
+}
+
+.carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.order{
+    margin-top: 50px;
+    height: 45vh;
+    background: #F8F9FA;
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Team-info .card img
+{
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+}
+

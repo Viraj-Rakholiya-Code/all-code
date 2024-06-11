@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.Container {
+  height: 100vh;
+  background: #009579;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
+input {
+  margin-top: 10px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #e0dfdf;
+  border-radius: 5px;
+  outline: none;
+}
+
+.link{
+  color: #009579;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #009579;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text{
+    display: flex;
+    font-size: 13px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.Signup{
+    color: #009579;
+    margin-left: 5px;
+}
+

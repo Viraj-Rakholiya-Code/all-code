@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  gap: 10px;
+}
+
+.box {
+  height: 300px;
+  width:300px;
+  background: #818FB4;
+}
+
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-wrap: wrap;
+    }
+}

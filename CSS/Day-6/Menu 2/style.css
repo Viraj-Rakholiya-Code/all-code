@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+nav {
+  width: 100vw;
+  background: #2d3250;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  gap: 40px;
+  background: #2d3250;
+  position: relative;
+}
+
+.btn-1 {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #2d3250;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  list-style-type: none;
+  background: #9195f6;
+}
+
+.d-m {
+      padding: 15px;
+
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-2 {
+  width: 100%;
+  color: #000;
+  background: #9195f6;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.sub-menu {
+  position: relative;
+  padding: 15px;
+}
+
+.sub-menu-style {
+  width: 100%;
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 100%;
+  background: #ffbe98;
+}
+
+.n-m{
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-menu:hover .sub-menu-style{
+display: block;
+}

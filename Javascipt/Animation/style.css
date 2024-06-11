@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+
+.page1{
+    background: #525CEB;
+    height: 100vh; display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2{
+    background: #7FC7D9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page3{
+    background: #365486;
+    height: 100vh;
+}
+
+.box{
+   
+    height: 200px;
+    width: 200px;
+    background: #365486;
+}

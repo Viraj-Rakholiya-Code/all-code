@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+.one {
+  background: #ffffff;
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+}
+
+.two {
+  background: #F4567E;
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+    text-align: center;
+    
+}
+
+.btn-2{
+    padding: 15px;
+    background: #F4567E;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e6e8;
+}
+
+.input {
+  margin-top: 20px;
+}
+
+.inputbox {
+  margin-top: 10px;
+  width: 95%;
+  border: none;
+  background: #f2f2f2;
+  padding: 13px;
+  border-radius: 20px;
+  outline: none;
+}
+.forbtn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-1 {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 5px;
+  color: #fff;
+  padding: 13px;
+  background: #F4567E;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+  color: #f35588;
+  padding: 10px;
+}
+
+.checkbox-type {
+  background: #f2f2f2;
+}
+
+.for-pass {
+  margin-top: 10px;
+  color: #808080;
+}

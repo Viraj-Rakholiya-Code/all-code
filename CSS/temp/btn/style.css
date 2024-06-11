@@ -1,0 +1,20 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  flex-direction: column;
+}
+
+
+h1{
+  font-size: 100px;
+  background: -webkit-linear-gradient(270deg, #EE82EE 0%, #0000FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+

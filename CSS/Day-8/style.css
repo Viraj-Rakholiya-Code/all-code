@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box img {
+  height: 300px;
+  width: 300px;
+}
+
+.box:hover{
+   animation: name 2s linear  ;
+}
+
+@keyframes name {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(900px ,0) ;
+    }
+    50%{
+        transform: translate(900px,500px);
+    }
+    75%{
+        transform: translate(0, 500px) ;
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}

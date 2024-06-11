@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin-bottom: 20px;
+    
+}
+
+.box{
+    height: 400px;
+    float: left;
+    margin: 20px;
+    width: calc( 25% - 42px);
+border: 1px solid black;
+}
+
+.box-2{
+    height: 400px;
+    float: left;
+    margin: 20px;
+    width: calc(33.33% - 42px);
+    border: 1px solid black;
+}
+
+.box-3
+{
+    margin: 20px;
+    height: 400px;
+    width: calc( 50% - 42px);
+    border: 1px solid black;
+    float: left;
+}
+
+.box-4{
+    height: 400px;
+    float: left;
+    margin: 20px;
+    width: calc(33.33% - 42px);
+    border: 1px solid black;
+}
+
+.box-5{
+    height: 400px;
+    float: left;
+    margin: 20px;
+    width: calc( 20% - 42px);
+    border: 1px solid black;
+}
+
+.box-6{
+    height: 400px;
+    width: calc(50% - 42px);
+    border: 1px solid black;
+    margin: 20px;
+    float: left;
+}

@@ -1,0 +1,116 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+
+int decimal(int num);
+void binary(int num);
+
+void add()
+{
+    int n1, n2;
+    cout << "Enter Two Binary Numbers: ";
+    cin >> n1 >> n2;
+
+    int num1 = decimal(n1);
+    int num2 = decimal(n2);
+
+    int sum = num1 + num2;
+    binary(sum);
+}
+void sub()
+{
+	int n1, n2;
+    cout << "Enter Two Binary Numbers: ";
+    cin >> n1 >> n2;
+
+    int num1 = decimal(n1);
+    int num2 = decimal(n2);
+
+    int sum = num1 - num2;
+    binary(sum);
+}
+void mul()
+{
+	int n1, n2;
+    cout << "Enter Two Binary Numbers: ";
+    cin >> n1 >> n2;
+
+    int num1 = decimal(n1);
+    int num2 = decimal(n2);
+
+    int sum = num1 * num2;
+    binary(sum);
+}
+void div()
+{
+	int n1, n2;
+    cout << "Enter Two Binary Numbers: ";
+    cin >> n1 >> n2;
+
+    int num1 = decimal(n1);
+    int num2 = decimal(n2);
+
+    int sum = num1 / num2;
+    binary(sum);
+}
+void binary(int num)
+{
+    int arr[50];
+    int i = 0;
+    while (num > 0)
+    {
+	arr[i] = num % 2;
+	num = num / 2;
+	i++;
+    }
+    cout<<"---------------------------------------------------------"<<endl;
+    for (int j = i - 1; j >= 0; j--)
+    {
+	cout << arr[j];
+    }
+    cout << endl;
+}
+
+int decimal(int num)
+{
+    int i = 0;
+    int dec = 0;
+
+    while (num != 0)
+    {
+	int digit = num % 10;
+	dec += digit * pow(2, i);
+	num /= 10;
+	i++;
+    }
+    return dec;
+}
+
+void main()
+{
+    clrscr();
+    cout << "Choose ==> + = 1, - = 2, * = 3, / = 4  :: ";
+    int val;
+    cin >> val;
+
+    switch (val)
+    {
+	case 1:
+	    add();
+	    break;
+
+	case 2:
+	     sub();
+	     break;
+	case 3:
+	      mul();
+	      break;
+	case 4:
+	      div();
+	      break;
+	default:
+		break;
+    }
+    getch();
+}

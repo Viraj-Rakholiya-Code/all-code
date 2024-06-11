@@ -1,0 +1,114 @@
+#include <iostream>
+#include <conio.h> // for clrscr()
+
+class bank {
+    char name[20];
+    int AccountNumber, openingBal;
+
+public:
+    void display() {
+        printf("Account Opening  :: 1\n"
+                  "Withdrawal Amount :: 2\n"
+                  "Deposit Amount    :: 3\n"
+                  "Check Balance     :: 4\n"
+                  "Exit              :: 5\n"
+                  "****************************************************\n"
+                  "PRESS NUMBER :: ");
+
+        int value;
+        std::cin >> value;
+
+        printf("****************************************************\n");
+
+        switch (value) {
+            case 1:
+                AccountOpen();
+                break;
+            case 2:
+                withdrawal();
+                break;
+            case 3:
+                deposit();
+                break;
+            case 4:
+                checkBal();
+                break;
+            case 5:
+                return;
+            default:
+                printf("Invalid Operator\n");
+        }
+    }
+
+    void AccountOpen() {
+        clrscr(); // Clear screen
+        printf("Enter Your Name :: ");
+        std::cin.ignore();
+        std::cin.getline(name, 20);
+        printf("Generate Your Account Number :: ");
+        std::cin >> AccountNumber;
+        printf("Enter Account Opening Balance :: ");
+        std::cin >> openingBal;
+        printf("****************************************************\n");
+    }
+
+    void DisplayName() {
+        printf("Name :: %s\n", name);
+    }
+
+    void withdrawal() {
+        clrscr(); // Clear screen
+        int withdrawalAmount;
+        printf("Enter Your Withdrawal Amount ::");
+        std::cin >> withdrawalAmount;
+
+        if (withdrawalAmount > openingBal) {
+            printf("Insufficient Balance!\n");
+        } else {
+            openingBal -= withdrawalAmount;
+            printf("Withdrawal Successful !\n");
+        }
+        printf("****************************************************\n");
+    }
+
+    void deposit() {
+        clrscr(); // Clear screen
+        int DepositAmount;
+        printf("Enter Your Deposit Amount :: ");
+        std::cin >> DepositAmount;
+        openingBal += DepositAmount;
+        printf("Deposit Successful!\n");
+        printf("****************************************************\n");
+    }
+
+    void checkBal() {
+        clrscr(); // Clear screen
+        printf("Your Current Balance :: %d\n", openingBal);
+    }
+};
+
+int main() {
+    bank obj[10];
+    int task, i = 0;
+
+    while (true) {
+        printf("Open New Account PRESS 1 :: \n"
+                  "My Accounts PRESS 2      :: \n");
+        std::cin >> task;
+
+        if (task == 1) {
+            obj[i].display();
+            i++;
+        } else if (task == 2) {
+            for (int j = 0; j < i; j++) {
+                printf("Account %2d ", j+1);
+                obj[j].DisplayName();
+            }
+        } else {
+            printf("Invalid option\n");
+            break;
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  font-weight: 900;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+header {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* background: lightblue; */
+
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.logo img {
+  height: 3vh;
+}
+
+.nav-btn button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #f04336;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar a:hover {
+  background: #f04336;
+  transition: 700ms background;
+}
+
+.menu {
+  display: none;
+}
+
+/* page1 */
+
+.page1 {
+  height: calc(100vh - 7vh);
+  background-image: url("./image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-attachment: fixed;
+}
+
+.info h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.info span {
+  background: #f04336;
+  border-radius: 10px;
+}
+
+.info p {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.info button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #f04336;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 0.9375rem;
+  color: #fff;
+}
+
+/* page-2 */
+
+.page2 {
+  height: 70vh;
+  /* width: 100vw; */
+  overflow: hidden;
+  background-image: url("./image/bg-2.jpg");
+  padding-left: 30px;
+  padding-right: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.page2 h2{
+  color: #f04336;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.page2 h1{
+  font-size: 2.6rem;
+  margin-top: 10px;
+}
+.box-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box{
+  width: 250px;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0px 2px 16px -6px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.box p{
+  color: #747474;
+}
+.box h1{
+  font-size: 4rem;
+}
+
+
+/* page3 */
+
+
+.page3{
+  height: 100vh;
+
+}
+
