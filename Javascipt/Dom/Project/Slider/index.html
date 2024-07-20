@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-2xl">
+        <div class="relative">
+            <div id="slider" class="overflow-hidden">
+                <div id="slides" class="flex transition-transform  ease-in-out">
+                    <img src="https://picsum.photos/id/1018/800/400" alt="Image 1" class="w-full">
+                    <img src="https://picsum.photos/id/1015/800/400" alt="Image 2" class="w-full">
+                    <img src="https://picsum.photos/id/1019/800/400" alt="Image 3" class="w-full">
+                    <img src="https://picsum.photos/id/1016/800/400" alt="Image 4" class="w-full">
+                    <img src="https://picsum.photos/id/1020/800/400" alt="Image 5" class="w-full">
+                </div>
+            </div>
+            <button id="prevBtn" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="nextBtn" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
