@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="p-5 w-full flex flex-row gap-5">
+      <div class="w-[65%] flex flex-col gap-5">
+        <div
+          id="item1"
+          class="h-[200px] bg-gray-300 rounded-md p-3 flex flex-row gap-5 item"
+        >
+          <img
+            src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/paneer-pizza-recipe-1-500x500.jpg"
+            alt=""
+            class="w-[190px] h-full rounded-md object-cover min-w-[190px]"
+          />
+          <div class="flex flex-row justify-between w-full">
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-bold">Pizza</h1>
+              <p class="font-medium text-xl">$20.00</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <div class="flex justify-center items-center flex-col">
+                <div class="flex flex-row gap-2">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    data-name="Pizza"
+                    data-price="20"
+                  />
+                  <p>Add To Cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="item2"
+          class="h-[200px] bg-gray-300 rounded-md p-3 flex flex-row gap-5 item"
+        >
+          <img
+            src="https://b.zmtcdn.com/data/pictures/8/19584728/388826aaac05d5024c37499c1b2017af.jpg"
+            alt=""
+            class="w-[190px] h-full rounded-md object-cover max-w-[190px]"
+          />
+          <div class="flex flex-row justify-between w-full">
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-bold">Milk Shake</h1>
+              <p class="font-medium text-xl">$97.00</p>
+            </div>
+            <div class="flex justify-center items-end flex-col">
+              <div class="flex flex-row gap-2">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  data-name="Milk Shake"
+                  data-price="97"
+                />
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="item3"
+          class="h-[200px] bg-gray-300 rounded-md p-3 flex flex-row gap-5 item"
+        >
+          <img
+            src="https://assets.bonappetit.com/photos/62b1f659a38f8b1339b88af8/1:1/w_2560%2Cc_limit/20220615-0622-sandwiches-1746-final%2520(1).jpg"
+            alt=""
+            class="w-[190px] h-full rounded-md min-w-[190px]"
+          />
+          <div class="flex flex-row justify-between w-full">
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-bold">Sandwich</h1>
+              <p class="font-medium text-xl">$34.00</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <div class="flex justify-center items-center flex-col">
+                <div class="flex flex-row gap-2">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    data-name="Sandwich"
+                    data-price="34"
+                  />
+                  <p>Add To Cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-200 w-[35%] rounded-md h-[50vh] p-5 gap-5">
+        <h1 class="font-bold text-3xl">Your Order</h1>
+        <div id="order-list"></div>
+        <div
+          class="mt-5 flex flex-row justify-between font-bold border-t-2 border-t-black"
+        >
+          <h1 class="text-3xl">Total</h1>
+          <h1 id="total-price" class="text-lg">$0</h1>
+        </div>
+        <button
+          class="text-center p-2 px-3 bg-black text-white rounded-md w-full mt-5"
+        >
+          Pay Now
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
